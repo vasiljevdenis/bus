@@ -3,10 +3,53 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
-// @import 'akar-icons-fonts';
+@import 'intl-tel-input/build/css/intlTelInput.css';
 
-// @import 'bootstrap-icons/font/bootstrap-icons.css'; 
+@import 'bootstrap-icons/font/bootstrap-icons.css'; 
+
+[data-bs-theme=dark] {
+    --bs-body-bg: #333333;
+}
 
 body {
     font-family: 'Inter', sans-serif;
     }
+
+.btn-light:hover {
+    border: 1px solid #fff;
+    color: #fff !important;
+    background: transparent;
+}
+
+.custom-input {
+width: 194px;
+height: 44px;
+background: #3D3D3D;
+border: 1px solid #535353;
+color: #ffffff;
+}
+
+.custom-textarea {
+width: 400px;
+height: 80px;
+background: #3D3D3D;
+border: 1px solid #535353;
+color: #ffffff;
+}
+
+.custom-input:focus-visible,
+.custom-textarea:focus-visible {
+    outline: none;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+.iti__selected-flag .iti__flag {
+    display: none !important;
+}
