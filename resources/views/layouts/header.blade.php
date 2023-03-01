@@ -16,18 +16,15 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link text-white me-md-2" href="#" id="url">On Board</a>
+                                <a class="nav-link @if ($active == 'board') active @endif text-white me-md-2" href="/board" id="url">On Board</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mt-2 mt-md-0" href="#">Itineraries</a>
+                                <a class="nav-link @if ($active == 'itineraries') active @endif text-white mt-2 mt-md-0" href="/itineraries">Itineraries</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mt-2 mt-md-0" href="#">Private Hire</a>
+                                <a class="nav-link @if ($active == 'contact') active @endif text-white mt-2 mt-md-0" href="#">Сontact Us</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white mt-2 mt-md-0" href="#">Сontact Us</a>
-                            </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown ms-md-5">
                                 <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     EN <i class="ai-chevron-down"></i>

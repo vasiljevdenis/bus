@@ -13,12 +13,42 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    overflow-x: hidden;
     }
 
-.btn-light:hover {
+    footer {
+        background: #333333;
+    }
+.btn-light:hover,
+.btn-light.active {
     border: 1px solid #fff;
     color: #fff !important;
     background: transparent;
+}
+.btn-light.active.dark {
+    border: 1px solid #333333;
+    color: #333333 !important;
+    background: transparent;
+}
+
+div[data-id="experience"] ul li::marker {
+    content: "— ";
+}
+
+.list-g-itineraries {
+    width: 24px;
+    height: 24px;
+    background: #2A8A0E;
+    color: #ffffff;
+    border-radius: 50%;    
+}
+.list-v-itineraries {
+    width: 24px;
+    height: 24px;
+    background: #860092;
+    color: #ffffff;
+    border-radius: 50%;    
 }
 
 .custom-input {
@@ -37,6 +67,10 @@ border: 1px solid #535353;
 color: #ffffff;
 }
 
+.color-text {
+    color: #333333;
+}
+
 .custom-input:focus-visible,
 .custom-textarea:focus-visible {
     outline: none;
@@ -52,4 +86,25 @@ a:hover {
 
 .iti__selected-flag .iti__flag {
     display: none !important;
+}
+
+.nav-link.active {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 1rem;
+    margin-right: 1rem !important;
+}
+
+.board-link {
+    cursor: pointer;    
+}
+.board-link:hover {
+    opacity: .75;
+}
+.board-link.active {
+    color: #333333;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 0;
 }

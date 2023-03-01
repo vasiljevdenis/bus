@@ -30,7 +30,7 @@
         @vite(['resources/sass/app.scss'])
     </head>
     <body>
-    @include('layouts.header', ['background' => '#0D0D0D80'])
+    @include('layouts.header', ['background' => '#0D0D0D80', 'active' => ''])
     <main>
         <div class="container-fluid vh-100" style="background: url(images/preview.png); background-size: 100%; background-repeat: no-repeat;">
             <div class="row h-100">
