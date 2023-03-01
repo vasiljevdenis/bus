@@ -12,22 +12,22 @@
                 <div class="col-6 col-md-3">
                         <ul class="navbar-nav pe-3">
                             <li class="nav-item">
-                                <a class="nav-link text-white me-md-2 pt-1 pb-1" href="#" id="url">Covid 19 update</a>
+                                <a class="nav-link text-white me-md-2 pt-1 pb-1" href="/covid19">Covid 19 update</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mt-2 mt-md-0 pt-1 pb-1" href="#" id="download">Privacy policy</a>
+                                <a class="nav-link text-white mt-2 mt-md-0 pt-1 pb-1" href="/privacy">Privacy policy</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mt-2 mt-md-0 pt-1 pb-1" href="#" id="download">Cookie policy</a>
+                                <a class="nav-link text-white mt-2 mt-md-0 pt-1 pb-1" href="/cookies">Cookie policy</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mt-2 mt-md-0 pt-1 pb-1" href="#" id="download">FAQs</a>
+                                <a class="nav-link text-white mt-2 mt-md-0 pt-1 pb-1" href="/faq">FAQs</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mt-2 mt-md-0 pt-1 pb-1" href="#" id="download">Terms and conditions</a>
+                                <a class="nav-link text-white mt-2 mt-md-0 pt-1 pb-1" href="#">Terms and conditions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white mt-2 mt-md-0 pt-1 pb-1" href="#" id="download">Career</a>
+                                <a class="nav-link text-white mt-2 mt-md-0 pt-1 pb-1" href="/career">Career</a>
                             </li>
                         </ul>
                 </div>

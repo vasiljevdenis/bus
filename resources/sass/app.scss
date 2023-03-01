@@ -32,6 +32,12 @@ body {
     background: transparent;
 }
 
+.btn-dark:hover {
+    border: 1px solid #000;
+    color: #000 !important;
+    background: transparent;
+}
+
 div[data-id="experience"] ul li::marker {
     content: "— ";
 }
@@ -51,6 +57,13 @@ div[data-id="experience"] ul li::marker {
     border-radius: 50%;    
 }
 
+.custom-input-light {
+width: 219px;
+height: 44px;
+background: #ffffff;
+border: 1px solid #B0B0B0;
+color: #333333;
+}
 .custom-input {
 width: 194px;
 height: 44px;
@@ -66,13 +79,20 @@ background: #3D3D3D;
 border: 1px solid #535353;
 color: #ffffff;
 }
+.custom-textarea-light {
+width: 450px;
+height: 80px;
+background: #ffffff;
+border: 1px solid #B0B0B0;
+color: #333333;
+}
 
 .color-text {
     color: #333333;
 }
 
-.custom-input:focus-visible,
-.custom-textarea:focus-visible {
+input:focus-visible,
+textarea:focus-visible {
     outline: none;
 }
 
@@ -107,4 +127,12 @@ a:hover {
     color: #333333;
     border-bottom: 1px solid #333333;
     padding-bottom: 0;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 0;
+}
+.modal-header {
+    border-bottom: none;
 }

@@ -22,7 +22,7 @@
                                 <a class="nav-link @if ($active == 'itineraries') active @endif text-white mt-2 mt-md-0" href="/itineraries">Itineraries</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link @if ($active == 'contact') active @endif text-white mt-2 mt-md-0" href="#">Сontact Us</a>
+                                <a class="nav-link @if ($active == 'contact') active @endif text-white mt-2 mt-md-0" href="/contact">Сontact Us</a>
                             </li>
                             <li class="nav-item dropdown ms-md-5">
                                 <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

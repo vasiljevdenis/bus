@@ -10,7 +10,7 @@ openCanvas.addEventListener('click', function () {
     bsOffcanvas.show();
 });
 
-const input = document.querySelector("input#phone");
+const input = document.querySelector("#feedback input#phone");
 intlTelInput(input, {
     initialCountry: 'gb',
     separateDialCode: true,

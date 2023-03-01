@@ -22,3 +22,21 @@ Route::get('/board', function () {
 Route::get('/itineraries', function () {
     return view('pages.itineraries');
 });
+Route::get('/career', function () {
+    return view('pages.career');
+});
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+Route::get('/privacy', function () {
+    return view('pages.privacy');
+});
+Route::get('/cookies', function () {
+    return view('pages.cookies');
+});
+Route::get('/covid19', function () {
+    return view('pages.covid19');
+});
+Route::get('/faq', function () {
+    return view('pages.faq');
+});
