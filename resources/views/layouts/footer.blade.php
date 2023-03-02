@@ -5,7 +5,7 @@
                 <a class="navbar-brand" href="/"><img src="/images/logo.svg" alt="Логотип" class="w-100"
                         style="max-width: 250px;"></a>
                         <p class="mt-4 mb-0">Contact us</p>
-                        <p><a href="" class="text-decoration-none text-white">info@primebustours.com</a></p>
+                        <p><a href="mailto:info@primebustours.com" class="text-decoration-none text-white">info@primebustours.com</a></p>
                         <p class="mb-0">Our social</p>
                         <p style="font-size: 30px;"><a href="" class="me-2"><i class="bi bi-instagram text-white"></i></a><a href=""><i class="bi bi-facebook text-white"></i></a></p>
                 </div>

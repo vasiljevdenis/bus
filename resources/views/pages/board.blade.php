@@ -21,11 +21,6 @@
         <link rel="canonical" href="{{ config('app.url', '') }}">
         <link rel="shortcut icon" href="{{ config('app.url', '') }}/images/{{ config('app.app_favicon', 'favicon.png') }}" type="image/x-icon">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
         <!-- Styles -->
         @vite(['resources/sass/app.scss'])
     </head>
@@ -63,7 +58,7 @@
                                 <h2 class="text-white mb-3 fw-light text-uppercase">You will indulge into remarkable experience,<br> never seen in London before. Tailored for you<br> and those accompanying you</h2>
                                 <p style="color: #E1E1E1;">You can add to your tour experience snacks and drinks <br> from our menu selection.</p>
                                 <p style="color: #E1E1E1;">You can ask for special decorations and surprises.</p>
-                                <button type="button" class="btn btn-light active text-dark text-uppercase rounded-0 mt-5 ps-4 pe-4">book a tour <i class="bi bi-arrow-right"></i></button><br>
+                                <button type="button" class="btn btn-light active text-dark text-uppercase rounded-0 mt-5 ps-4 pe-4" onclick="location.href = '/booking'">book a tour <i class="bi bi-arrow-right"></i></button><br>
                             </div>
                         </div>
                         <div class="position-absolute" style="background: #000000; opacity: .8; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
@@ -97,7 +92,7 @@
                             </div>
                             <div class="col-12 pe-0 text-center">
                                 <img src="/images/gallery.png" alt="gallery" style="width: 100%;">
-                                <button type="button" class="btn btn-light active dark text-dark text-uppercase rounded-0 mt-5 ps-4 pe-4">book a tour <i class="bi bi-arrow-right"></i></button><br>
+                                <button type="button" class="btn btn-light active dark text-dark text-uppercase rounded-0 mt-5 ps-4 pe-4" onclick="location.href = '/booking'">book a tour <i class="bi bi-arrow-right"></i></button><br>
                             </div>
                         </div>
                     </div>

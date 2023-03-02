@@ -37,7 +37,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark text-uppercase btn btn-light rounded-0 mt-2 mt-md-0 ms-md-2 ps-4 pe-4" href="#">Book a tour</a>
+                                <a class="nav-link text-dark text-uppercase btn btn-light rounded-0 mt-2 mt-md-0 ms-md-2 ps-4 pe-4" href="/booking">Book a tour</a>
                             </li>
                         </ul>
                     </div>
@@ -45,3 +45,39 @@
             </div>
         </nav>
     </header>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.addEventListener('load', function(){
+  window.cookieconsent.initialise({
+   revokeBtn: "<div class='cc-revoke'></div>",
+   type: "opt-in",
+   palette: {
+       popup: {
+           background: "#333333",
+           text: "#ffffff"
+        },
+       button: {
+           background: "#ffffff",
+           text: "#333333"
+        }
+    },
+   content: {
+       message: "This website uses cookies to ensure you get the best experience on it.",
+       link: "Find out how we use",
+       allow: "ACCEPT",
+       deny: "DECLINE",
+       href: "https://www.aboutcookies.org/"
+    },
+    onInitialise: function(status) {
+      if(status == cookieconsent.status.allow) myScripts();
+    },
+    onStatusChange: function(status) {
+      if (this.hasConsented()) myScripts();
+    }
+  })
+});
+
+function myScripts() {
+}
+</script>

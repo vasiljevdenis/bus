@@ -40,3 +40,6 @@ Route::get('/covid19', function () {
 Route::get('/faq', function () {
     return view('pages.faq');
 });
+Route::get('/booking', function () {
+    return view('pages.booking');
+});

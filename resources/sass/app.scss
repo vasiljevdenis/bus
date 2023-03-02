@@ -5,7 +5,7 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'intl-tel-input/build/css/intlTelInput.css';
 
-@import 'bootstrap-icons/font/bootstrap-icons.css'; 
+@import 'bootstrap-icons/font/bootstrap-icons.css';
 
 [data-bs-theme=dark] {
     --bs-body-bg: #333333;
@@ -15,17 +15,19 @@ body {
     font-family: 'Inter', sans-serif;
     background: #ffffff;
     overflow-x: hidden;
-    }
+}
 
-    footer {
-        background: #333333;
-    }
+footer {
+    background: #333333;
+}
+
 .btn-light:hover,
 .btn-light.active {
     border: 1px solid #fff;
     color: #fff !important;
     background: transparent;
 }
+
 .btn-light.active.dark {
     border: 1px solid #333333;
     color: #333333 !important;
@@ -47,50 +49,54 @@ div[data-id="experience"] ul li::marker {
     height: 24px;
     background: #2A8A0E;
     color: #ffffff;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
+
 .list-v-itineraries {
     width: 24px;
     height: 24px;
     background: #860092;
     color: #ffffff;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
 .custom-input-light {
-width: 219px;
-height: 44px;
-background: #ffffff;
-border: 1px solid #B0B0B0;
-color: #333333;
+    width: 219px;
+    height: 44px;
+    background: #ffffff;
+    border: 1px solid #B0B0B0;
+    color: #333333;
 }
+
 .custom-input {
-width: 194px;
-height: 44px;
-background: #3D3D3D;
-border: 1px solid #535353;
-color: #ffffff;
+    width: 194px;
+    height: 44px;
+    background: #3D3D3D;
+    border: 1px solid #535353;
+    color: #ffffff;
 }
 
 .custom-textarea {
-width: 400px;
-height: 80px;
-background: #3D3D3D;
-border: 1px solid #535353;
-color: #ffffff;
+    width: 400px;
+    height: 80px;
+    background: #3D3D3D;
+    border: 1px solid #535353;
+    color: #ffffff;
 }
+
 .custom-textarea-light {
-width: 450px;
-height: 80px;
-background: #ffffff;
-border: 1px solid #B0B0B0;
-color: #333333;
+    width: 450px;
+    height: 80px;
+    background: #ffffff;
+    border: 1px solid #B0B0B0;
+    color: #333333;
 }
 
 .color-text {
     color: #333333;
 }
 
+button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
     outline: none;
@@ -118,11 +124,13 @@ a:hover {
 }
 
 .board-link {
-    cursor: pointer;    
+    cursor: pointer;
 }
+
 .board-link:hover {
     opacity: .75;
 }
+
 .board-link.active {
     color: #333333;
     border-bottom: 1px solid #333333;
@@ -133,6 +141,27 @@ a:hover {
     border: none;
     border-radius: 0;
 }
+
 .modal-header {
     border-bottom: none;
+}
+
+[data-bs-theme=dark] .accordion-button::after {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333333'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333333'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #333333;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.cc-deny,
+.cc-allow {
+    text-decoration: none;
 }

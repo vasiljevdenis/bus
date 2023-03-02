@@ -21,11 +21,6 @@
         <link rel="canonical" href="{{ config('app.url', '') }}">
         <link rel="shortcut icon" href="{{ config('app.url', '') }}/images/{{ config('app.app_favicon', 'favicon.png') }}" type="image/x-icon">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
         <!-- Styles -->
         @vite(['resources/sass/app.scss'])
     </head>
@@ -37,7 +32,7 @@
                 <div class="col-12 mt-auto mb-auto p-5">
                     <h1 class="text-uppercase fw-light">Luxury sightseeing <br> bus tours</h1>
                     <p class="text-white mt-3">A unique and one of a kind luxury, sightseeing <br> experience there is and ever will be in London</p>
-                    <button type="button" class="btn btn-light text-dark text-uppercase rounded-0 mt-4 ps-4 pe-4">Learn more</button><br>
+                    <button type="button" class="btn btn-light text-dark text-uppercase rounded-0 mt-4 ps-4 pe-4" onclick="location.href = '/board'">Learn more</button><br>
                     <a href="" class="text-decoration-none">
                     <div class="d-inline-block">
                     <div class="rounded-circle d-flex mt-5" style="width: 84px; height: 84px; border: 1px dashed rgba(255, 255, 255, 0.5);">
