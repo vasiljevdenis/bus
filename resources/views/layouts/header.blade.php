@@ -67,7 +67,7 @@ window.addEventListener('load', function(){
        link: "Find out how we use",
        allow: "ACCEPT",
        deny: "DECLINE",
-       href: "https://www.aboutcookies.org/"
+       href: "/cookies"
     },
     onInitialise: function(status) {
       if(status == cookieconsent.status.allow) myScripts();

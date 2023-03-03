@@ -5,6 +5,7 @@ export default defineConfig({
     plugins: [
         laravel({
             input: ['resources/sass/app.scss',
+                    'resources/sass/booking.scss',
                     'resources/js/app.js',
                     'resources/js/board.js',
                     'resources/js/itineraries.js',

@@ -1,0 +1,42 @@
+@import '../js/dhtmlx-combobox/suite.min.css';
+
+:root {
+--dhx-font-size-normal: 1rem;
+}
+
+.dhtmlx-booking .dhx_combobox-input-box {
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #D1D1D1;
+    color: #333333;
+    border-radius: 0;
+}
+
+.dhtmlx-booking .dxi.dxi-menu-down:before {
+    content: url("../js/dhtmlx-combobox/chevron-down.svg");
+    font-size: 14px;
+    margin: 0.5rem;
+}
+.dhtmlx-booking .dxi.dxi-menu-up:before {
+    content: url("../js/dhtmlx-combobox/chevron-down.svg");
+    font-size: 14px;
+    margin: 0.5rem;
+}
+
+.dhtmlx-booking input::placeholder {
+    color: #C1C1C1;
+}
+
+.dhx_list-item:hover,
+.dhx_list-item--focus {
+    background-color: #F5F5F5;
+}
+
+.dhtmlx-booking .dhx_combobox-input-list {
+    height: 100%;
+}
+
+.dhtmlx-booking .dhx_combobox-input-box,
+.dhtmlx-booking .dhx_combobox-input-box:focus-within {
+    box-shadow: none;
+}

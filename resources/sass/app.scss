@@ -92,14 +92,70 @@ div[data-id="experience"] ul li::marker {
     color: #333333;
 }
 
+.input-booking {
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #D1D1D1;
+    color: #333333;
+    border-radius: 0;
+}
+
+.input-booking:focus {
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: none;
+    border-color: #D1D1D1;
+}
+.input-booking:disabled {
+    background-color: #ffffff;
+}
+
+.input-booking::placeholder {
+    color: #C1C1C1;
+    border-color: #D1D1D1;
+}
+
+.form-check-input {
+    background-color: #ffffff;
+    border-color: #D1D1D1;
+}
+
+.form-check-input:focus {
+    border-color: #D1D1D1;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    border-color: #D1D1D1;
+    background-color: #333333;
+    box-shadow: none;
+}
+
 .color-text {
     color: #333333;
 }
 
+.bg-main {
+    background: #333333;
+}
+
+select:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
     outline: none;
+}
+
+.form-select:focus {
+    box-shadow: none;
+    border-color: #D1D1D1;
+}
+.form-select option {
+    height: 46px;    
+}
+.form-select option:hover {
+    background: #F5F5F5; 
 }
 
 .dropdown-toggle::after {
@@ -164,4 +220,35 @@ a:hover {
 .cc-deny,
 .cc-allow {
     text-decoration: none;
+}
+
+.progress {
+    overflow: inherit;
+    height: 2px;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #E8E8E8;
+}
+
+.progress-bar {
+    height: 2px; 
+    background: #333333;
+    transition: width .3s ease-out;
+}
+
+.checkpoint {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #E8E8E8;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkpoint.active {
+    background: #333333;
+    color: #ffffff;
 }
