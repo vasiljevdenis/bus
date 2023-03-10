@@ -40,6 +40,19 @@ footer {
     background: transparent;
 }
 
+.btn-pink {
+    border: 1px solid #EAECF0;
+    color: #252525 !important;
+    background: #FFF7E8;
+}
+
+.btn-pink:hover {
+    opacity: .95;
+    border: 1px solid #EAECF0;
+    color: #252525 !important;
+    background: #FFF7E8;
+}
+
 div[data-id="experience"] ul li::marker {
     content: "— ";
 }
@@ -166,7 +179,7 @@ a:hover {
     opacity: .75;
 }
 
-.iti__selected-flag .iti__flag {
+.iti__selected-flag .iti__flag:not(#bookingForm .iti__flag) {
     display: none !important;
 }
 
@@ -222,33 +235,6 @@ a:hover {
     text-decoration: none;
 }
 
-.progress {
-    overflow: inherit;
-    height: 2px;
-    width: 100%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #E8E8E8;
-}
-
-.progress-bar {
-    height: 2px; 
-    background: #333333;
-    transition: width .3s ease-out;
-}
-
-.checkpoint {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: #E8E8E8;
-    color: #333333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.checkpoint.active {
-    background: #333333;
-    color: #ffffff;
+.c-p {
+    cursor: pointer;
 }

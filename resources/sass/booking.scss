@@ -2,6 +2,7 @@
 
 :root {
 --dhx-font-size-normal: 1rem;
+--dhx-color-primary: hsl(var(--dhx-h-primary),var(--dhx-s-primary),calc(var(--dhx-l-primary) - var(--dhx-l-contrast-offset)));
 }
 
 .dhtmlx-booking .dhx_combobox-input-box {
@@ -40,3 +41,86 @@
 .dhtmlx-booking .dhx_combobox-input-box:focus-within {
     box-shadow: none;
 }
+
+.error {
+    border: 1px solid #FE0000;
+}
+
+.error-text {
+    color: #FE0000;
+}
+
+.seat:not(.taken) {
+    cursor: pointer;
+}
+.seat:not(.taken):hover {
+    opacity: .85;
+}
+
+.seat.taken {
+    filter: saturate(0);
+    -webkit-filter: saturate(0);
+}
+.seat.selected {
+    filter: saturate(7) hue-rotate(283deg);
+    -webkit-filter: saturate(7) hue-rotate(283deg);
+}
+
+#bookingForm .iti {
+    display: block;
+
+}
+
+.disabled {
+    opacity: .6;
+}
+
+input.dhtmlx-booking {
+    height: 50px;
+    color: rgba(0,0,0,.7)
+}
+input.dhtmlx-booking::placeholder {
+    color: rgba(0,0,0,.3)
+}
+input.dhtmlx-booking[disabled] {
+    opacity: .6;
+}
+
+.custom-calendar {
+    --dhx-color-primary: #212529;
+}
+
+.progress {
+    overflow: inherit;
+    height: 2px;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #E8E8E8;
+}
+
+.progress-bar {
+    height: 2px; 
+    background: #333333;
+    transition: width .3s ease-out;
+}
+
+.checkpoint {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #E8E8E8;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .3s ease-in;
+}
+.checkpoint.active {
+    background: #333333;
+    color: #ffffff;
+}
+
+
+
