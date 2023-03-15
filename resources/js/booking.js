@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialization
     const token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-    const itinerary = new dhx.Combobox("itinerary", {
+    const itinerary = new window.dhx.Combobox("itinerary", {
         label: "Itinerary",
         placeholder: "Select tour itinerary",
         css: 'dhtmlx-booking'
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             itinerary.data.parse(initialDataset);
         // });
 
-        const guests = new dhx.Combobox("guests", {
+        const guests = new window.dhx.Combobox("guests", {
             label: "Guests",
             placeholder: "Select the number of guests",
             css: 'dhtmlx-booking',
@@ -65,14 +65,14 @@ document.addEventListener('DOMContentLoaded', function () {
             disabled: true
         });
 
-        const table = new dhx.Combobox("table", {
+        const table = new window.dhx.Combobox("table", {
             label: "Table requirements",
             placeholder: "Select table type",
             css: 'dhtmlx-booking',
             disabled: true
         });
 
-        const date = new dhx.Calendar("date", {
+        const date = new window.dhx.Calendar("date", {
             css: "dhx_widget--bordered custom-calendar",
             dateFormat: "%d.%m.%Y",
             disabledDates: function (date) {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
         });
 
-        const time = new dhx.Combobox("time", {
+        const time = new window.dhx.Combobox("time", {
             label: "Time",
             placeholder: "Select time",
             css: 'dhtmlx-booking',
