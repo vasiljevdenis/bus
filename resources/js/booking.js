@@ -197,7 +197,27 @@ document.addEventListener('DOMContentLoaded', function () {
                     steps[i+2].classList.remove('d-none');
                     progressBar.style.width = '100%';
                     checkpoint[i+1].classList.add('active');
+                    let data = new FormData();
+                    data.append('itinerary', document.querySelector('[data-id="itinerary"]').dataset.value);
+                    data.append('guests', document.querySelector('[data-id="guests"]').dataset.value);
+                    data.append('date', document.querySelector('[data-id="date"]').dataset.value);
+                    data.append('time', document.querySelector('[data-id="time"]').dataset.value);
+                    data.append('seats', JSON.stringify([{seat: '1A', price: '$12'}, {seat: '1A', price: '$12'}]));
+                    data.append('food', JSON.stringify([{name: 'Beer', price: '$12'}, {name: 'Beer', price: '$12'}]));
+                    data.append('total', '$123');
+                    fetch(`/sendmail`, {
+                        method: "POST",
+                        headers: {
+                            'X-CSRF-TOKEN': token
+                        },
+                        body: data
+                    })
+                    .then((response) => response.text())
+                    .then((data) => {
+                        console.log(data);
+                    });
                 }
+                window.scrollTo(0, 0);
             });
         });
 
@@ -252,25 +272,193 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Food
 
+        let foodArr = [
+            {
+                id: 1,
+                title: 'Soft drinks',
+                items: [
+                    {
+                        item_id: 1,
+                        name: 'Still water',
+                        count: '180 ml',
+                        price: 0.49
+                    },
+                    {
+                        item_id: 2,
+                        name: 'Sparkling water',
+                        count: '180 ml',
+                        price: 0.49
+                    },
+                    {
+                        item_id: 3,
+                        name: 'Coca-cola',
+                        count: '180 ml',
+                        price: 0.49
+                    },
+                    {
+                        item_id: 4,
+                        name: 'Milk',
+                        count: '180 ml',
+                        price: 0.49
+                    }
+                ]
+            },
+            {
+                id: 2,
+                title: 'Hot drinks',
+                items: [
+                    {
+                        item_id: 1,
+                        name: 'Green tea',
+                        count: '180 ml',
+                        price: 0.49
+                    },
+                    {
+                        item_id: 2,
+                        name: 'Black tea',
+                        count: '180 ml',
+                        price: 0.49
+                    }
+                ]
+            },
+            {
+                id: 3,
+                title: 'Beer',
+                items: [
+                    {
+                        item_id: 1,
+                        name: 'Kronenbourg 1664 (France)',
+                        count: '180 ml',
+                        price: 0.49
+                    }
+                ]
+            },
+            {
+                id: 4,
+                title: 'Sparkling wine (by glass)',
+                items: [
+                    {
+                        item_id: 1,
+                        name: 'Henri Giraud Hommage á François Hémart Grand Cru N.V.',
+                        count: '200 ml',
+                        price: 45
+                    },
+                    {
+                        item_id: 2,
+                        name: 'Prosecco Extra Dry Villa Domiziano N.V.',
+                        count: '200 ml',
+                        price: 45
+                    }
+                ]
+            },
+            {
+                id: 5,
+                title: 'Wine (by Glass)',
+                items: [
+                    {
+                        item_id: 1,
+                        name: 'Riesling, Karl Schaefer, Germany 2017',
+                        count: '200 ml',
+                        price: 45
+                    },
+                    {
+                        item_id: 2,
+                        name: 'Serre Nuove, Tenuta dell’ Ornellaia Italy 2017',
+                        count: '200 ml',
+                        price: 45
+                    }
+                ]
+            },
+            {
+                id: 6,
+                title: 'Sparkling wine (by bottle)',
+                items: [
+                    {
+                        item_id: 1,
+                        name: 'Henri Giraud Hommage á François Hémart Grand Cru N.V.',
+                        count: '900 ml',
+                        price: 180
+                    },
+                    {
+                        item_id: 2,
+                        name: 'Prosecco Extra Dry Villa Domiziano N.V.',
+                        count: '900 ml',
+                        price: 180
+                    }
+                ]
+            },
+            {
+                id: 7,
+                title: 'Wine (by bottle)',
+                items: [
+                    {
+                        item_id: 1,
+                        name: 'Riesling, Karl Schaefer, Germany 2017',
+                        count: '900 ml',
+                        price: 180
+                    },
+                    {
+                        item_id: 2,
+                        name: 'Serre Nuove, Tenuta dell’ Ornellaia Italy 2017',
+                        count: '900 ml',
+                        price: 180
+                    }
+                ]
+            }
+        ];
+
         let addFood = document.querySelectorAll('button[data-id="add"]');
 
         addFood.forEach(el => {
             el.addEventListener('click', function() {
                 let counter = '<p class="color-text fw-semibold ms-auto me-auto mb-0" data-id="counter" style="user-select: none;"><i class="bi bi-dash fs-5 c-p" data-id="minus"></i><span class="ps-3 pe-3" data-id="value">1</span><i class="bi bi-plus fs-5 c-p" data-id="plus"></i></p>';
                 let parent = this.parentNode;
+                const hrFood = document.querySelector('hr[data-id="food"]');
+                const h2Food = document.querySelector('h2[data-id="food"]');
+                const divFood = document.querySelector('div[data-id="food"]');
+                foodTrigger(parent, divFood, 1);
                 parent.insertAdjacentHTML('beforeend', counter);
                 this.classList.add('d-none');
                 parent.querySelector('[data-id="plus"]').addEventListener('click', function() {
-                    parent.querySelector('[data-id="value"]').innerHTML = +parent.querySelector('[data-id="value"]').innerHTML + 1;
+                    let n = +parent.querySelector('[data-id="value"]').innerHTML + 1;
+                    parent.querySelector('[data-id="value"]').innerHTML = n;
+                    foodTrigger(parent, divFood, n);
                 });
                 parent.querySelector('[data-id="minus"]').addEventListener('click', function() {
-                    parent.querySelector('[data-id="value"]').innerHTML = +parent.querySelector('[data-id="value"]').innerHTML - 1;
+                    let n = +parent.querySelector('[data-id="value"]').innerHTML - 1;
+                    parent.querySelector('[data-id="value"]').innerHTML = n;
                     if (+parent.querySelector('[data-id="value"]').innerHTML < 1) {
                         parent.querySelector('[data-id="counter"]').remove();
                         parent.querySelector('[data-id="add"]').classList.remove('d-none');
                     }
+                    foodTrigger(parent, divFood, n);
                 });
+                if (divFood.innerHTML.trim().length > 0 && divFood.classList.contains('d-none')) {
+                    hrFood.classList.remove('d-none');
+                    h2Food.classList.remove('d-none');
+                    divFood.classList.remove('d-none');
+                }
             });
         });
+
+        function foodTrigger(el, w, n) {
+            const id = +el.dataset.id;
+            const parentId = +el.dataset.parent;
+            let parent = foodArr.filter(el => {
+                return el.id === parentId
+            })[0];
+            let item = parent.items.filter(el => {
+                return el.item_id === id
+            })[0];
+            const html = `<div class="col-7"><p class="color-text" data-value="${parentId}${id}">${item.name}</p></div><div class="col-2" data-value="${parentId}${id}"><p class="color-text">${n}</p></div><div class="col-3" data-value="${parentId}${id}"><p class="color-text fw-semibold text-end">£${(item.price * n).toFixed(2)}</p></div>`;
+            if (document.querySelector(`#summary [data-value="${parentId}${id}"]`)) {
+                document.querySelector(`#summary [data-value="${parentId}${id}"]`).remove();
+                document.querySelector(`#summary [data-value="${parentId}${id}"]`).remove();
+                document.querySelector(`#summary [data-value="${parentId}${id}"]`).remove();
+            }
+            if (n > 0) {
+                w.insertAdjacentHTML('beforeend', html);
+            }                            
+        };
 
 });

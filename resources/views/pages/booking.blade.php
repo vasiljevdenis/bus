@@ -167,22 +167,22 @@
                         <p class="color-text text-center">(Extra charges apply)</p>
                         <h3 class="fs-5 color-text text-center fw-semibold text-uppercase">soft drinks</h3>
                         <div class="row">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="1" data-id="1"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Still water</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">180 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£0.49</div>
                             <hr class="mt-1 mb-2">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="1" data-id="2"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Sparkling water</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">180 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£0.49</div>
                             <hr class="mt-1 mb-2">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="1" data-id="3"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Coca-cola</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">180 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£0.49</div>
                             <hr class="mt-1 mb-2">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="1" data-id="4"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Milk</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">180 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£0.49</div>
@@ -190,67 +190,67 @@
                         </div>
                         <h3 class="fs-5 color-text text-center fw-semibold text-uppercase mt-5">hot drinks</h3>
                         <div class="row">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="2" data-id="1"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Green tea</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">180 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£0.49</div>
                             <hr class="mt-1 mb-2">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="2" data-id="2"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Black tea</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">180 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£0.49</div>
                         </div>
                         <h3 class="fs-5 color-text text-center fw-semibold text-uppercase mt-5">Beer</h3>
                         <div class="row">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="3" data-id="1"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Kronenbourg 1664 (France)</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">180 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£0.49</div>
                         </div>
                         <h3 class="fs-5 color-text text-center fw-semibold text-uppercase mt-5">sparkling wine (by glass)</h3>
                         <div class="row">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="4" data-id="1"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Henri Giraud Hommage á François Hémart Grand Cru N.V.</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">200 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£45</div>
                             <hr class="mt-1 mb-2">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="4" data-id="2"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Prosecco Extra Dry Villa Domiziano N.V.</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">200 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£45</div>
                         </div>
                         <h3 class="fs-5 color-text text-center fw-semibold text-uppercase mt-5">wine (by Glass)</h3>
                         <div class="row">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="5" data-id="1"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Riesling, Karl Schaefer, Germany 2017</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">200 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£45</div>
                             <hr class="mt-1 mb-2">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="5" data-id="2"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Serre Nuove, Tenuta dell’ Ornellaia Italy 2017</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">200 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£45</div>
                         </div>
                         <h3 class="fs-5 color-text text-center fw-semibold text-uppercase mt-5">sparkling wine (by bottle)</h3>
                         <div class="row">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="6" data-id="1"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Henri Giraud Hommage á François Hémart Grand Cru N.V.</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">900 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£180</div>
                             <hr class="mt-1 mb-2">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="6" data-id="2"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Prosecco Extra Dry Villa Domiziano N.V.</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">900 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£180</div>
                         </div>
                         <h3 class="fs-5 color-text text-center fw-semibold text-uppercase mt-5">wine (by bottle)</h3>
                         <div class="row">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="7" data-id="1"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Riesling, Karl Schaefer, Germany 2017</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">900 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£180</div>
                             <hr class="mt-1 mb-2">
-                            <div class="col-2 d-flex align-items-center justify-content-start ps-0"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
+                            <div class="col-2 d-flex align-items-center justify-content-start ps-0" data-parent="7" data-id="2"><button class="btn btn-pink text-uppercase rounded-0 ps-5 pe-5" type="button" data-id="add">ADD</button></div>
                             <div class="col-6 d-flex align-items-center color-text justify-content-start">Serre Nuove, Tenuta dell’ Ornellaia Italy 2017</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end">900 ml</div>
                             <div class="col-2 text-end d-flex align-items-center color-text justify-content-end pe-0">£180</div>
@@ -386,6 +386,9 @@
                     <hr>
                     <h2 class="fs-5 color-text fw-semibold text-uppercase">Seats</h2>
                     <div class="row" data-id="seats"></div>
+                    <hr data-id="food" class="d-none">                    
+                    <h2 class="fs-5 color-text fw-semibold text-uppercase d-none" data-id="food">food & BEVERAGE</h2>
+                    <div class="row d-none" data-id="food"></div>
                     <hr>                    
                     <div class="row">
                         <div class="col-8">
