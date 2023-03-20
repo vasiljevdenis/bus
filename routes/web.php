@@ -51,7 +51,15 @@ Route::get('/booking', function () {
     return view('pages.booking');
 });
 Route::post('/sendmail', function(Request $request) {
-    $arr = $request;
+    $arr = [
+        'itinerary' => $request->input('itinerary'),
+        'guests' => $request->input('guests'),
+        'date' => $request->input('date'),
+        'time' => $request->input('time'),
+        'seats' => $request->input('seats'),
+        'food' => $request->input('food'),
+        'total' => $request->input('total')
+    ];
     $mc = new MailController();
     return $mc->index($arr);
 });

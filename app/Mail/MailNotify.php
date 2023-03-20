@@ -32,6 +32,13 @@ class MailNotify extends Mailable
     {
         return $this->from('support@quickres.ru', 'Prime Bus!')
         ->subject($this->data["subject"])
-                    ->view('emails.booking')->with("data",$this->data);
+                    ->view('emails.booking')
+                    ->with('itinerary', $this->data['body']['itinerary'])
+                    ->with('guests', $this->data['body']['guests'])
+                    ->with('date', $this->data['body']['date'])
+                    ->with('time', $this->data['body']['time'])
+                    ->with('seats', $this->data['body']['seats'])
+                    ->with('food', $this->data['body']['food'])
+                    ->with('total', $this->data['body']['total']);
     }
 }

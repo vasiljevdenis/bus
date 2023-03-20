@@ -202,9 +202,27 @@ document.addEventListener('DOMContentLoaded', function () {
                     data.append('guests', document.querySelector('[data-id="guests"]').dataset.value);
                     data.append('date', document.querySelector('[data-id="date"]').dataset.value);
                     data.append('time', document.querySelector('[data-id="time"]').dataset.value);
-                    data.append('seats', JSON.stringify([{seat: '1A', price: '$12'}, {seat: '1A', price: '$12'}]));
-                    data.append('food', JSON.stringify([{name: 'Beer', price: '$12'}, {name: 'Beer', price: '$12'}]));
-                    data.append('total', '$123');
+                    let totalArr = [];
+                    let seats = [];
+                    let seatDivs = document.querySelectorAll('div[data-id="seats"] div[data-value] p');
+                    for (let i = 0; i < seatDivs.length; i++) {
+                        if (i === 0 || i % 2 === 0) {
+                            seats.push({seat: seatDivs[i].innerHTML, price: seatDivs[i+1].innerHTML});
+                            totalArr.push(+(seatDivs[i+1].innerHTML.slice(1)));
+                        }
+                    }
+                    let food = [];
+                    let foodDivs = document.querySelectorAll('div[data-id="food"] div[data-value] p');
+                    for (let i = 0; i < foodDivs.length; i++) {
+                        if (i === 0 || i % 3 === 0) {
+                            food.push({name: foodDivs[i].innerHTML, count: foodDivs[i+1].innerHTML, price: foodDivs[i+2].innerHTML});
+                            totalArr.push(+(foodDivs[i+2].innerHTML.slice(1)) * +(foodDivs[i+1].innerHTML));
+                        }
+                    }
+                    let total = totalArr.reduce((acc, number) => acc + number, 0).toFixed(2);
+                    data.append('seats', JSON.stringify(seats));
+                    data.append('food', JSON.stringify(food));
+                    data.append('total', total);
                     fetch(`/sendmail`, {
                         method: "POST",
                         headers: {
@@ -450,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let item = parent.items.filter(el => {
                 return el.item_id === id
             })[0];
-            const html = `<div class="col-7"><p class="color-text" data-value="${parentId}${id}">${item.name}</p></div><div class="col-2" data-value="${parentId}${id}"><p class="color-text">${n}</p></div><div class="col-3" data-value="${parentId}${id}"><p class="color-text fw-semibold text-end">£${(item.price * n).toFixed(2)}</p></div>`;
+            const html = `<div class="col-7" data-value="${parentId}${id}"><p class="color-text">${item.name}</p></div><div class="col-2" data-value="${parentId}${id}"><p class="color-text">${n}</p></div><div class="col-3" data-value="${parentId}${id}"><p class="color-text fw-semibold text-end">£${(item.price * n).toFixed(2)}</p></div>`;
             if (document.querySelector(`#summary [data-value="${parentId}${id}"]`)) {
                 document.querySelector(`#summary [data-value="${parentId}${id}"]`).remove();
                 document.querySelector(`#summary [data-value="${parentId}${id}"]`).remove();

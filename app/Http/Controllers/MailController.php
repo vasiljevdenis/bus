@@ -11,14 +11,13 @@ class MailController extends Controller
      
   public function index($arr)
   {
-    print_r($arr);
     $data = [
-      "subject"=>"Cambo Tutorial Mail",
+      "subject"=>"New booking!",
       "body"=>$arr
       ];
     try
     {
-      Mail::to('vasiljevdenis@bk.ru')->send(new MailNotify($data));
+      Mail::to('Grs.pro@bk.ru')->send(new MailNotify($data));
       return response()->json(['Great! Successfully send in your mail']);
     }
     catch(Exception $e)
