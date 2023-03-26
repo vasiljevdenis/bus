@@ -437,7 +437,7 @@
         </div>
     </main>        
     @include('layouts.footer')
-<script src="/js/dhtmlx-combobox/suite.min.js"></script>
+// <script src="/js/dhtmlx-combobox/suite.min.js"></script>
         @vite(['resources/js/app.js'])
         @vite(['resources/js/booking.js'])
     </body>
