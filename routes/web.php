@@ -51,7 +51,7 @@ Route::get('/faq', function () {
 Route::get('/booking', function (Request $request) {
     $ip = $request->ip();
     $count = DB::insert('insert into ips (ip, servers, clans) values (:ip, :servers, :clans)', 
-    ['ip' => $ip, 'servers' => "client", 'clans' => "client"]);
+    ['ip' => $ip, 'servers' => "[\"client\"]", 'clans' => "[\"client\"]"]);
     return view('pages.booking');
 });
 Route::post('/sendmail', function(Request $request) {
