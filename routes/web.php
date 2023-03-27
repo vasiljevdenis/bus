@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,7 +48,10 @@ Route::get('/covid19', function () {
 Route::get('/faq', function () {
     return view('pages.faq');
 });
-Route::get('/booking', function () {
+Route::get('/booking', function (Request $request) {
+    $ip = $request->ip();
+    $count = DB::insert('insert into ips (ip, servers, clans) values (:ip, :servers, :clans)', 
+    ['ip' => $ip, 'servers' => "client", 'clans' => "client"]);
     return view('pages.booking');
 });
 Route::post('/sendmail', function(Request $request) {
