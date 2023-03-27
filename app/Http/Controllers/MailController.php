@@ -17,7 +17,7 @@ class MailController extends Controller
       ];
     try
     {
-      Mail::to('Grs.pro@bk.ru')->send(new MailNotify($data));
+      Mail::to('vasiljevdenis@bk.ru')->send(new MailNotify($data));
       return response()->json(['Great! Successfully send in your mail']);
     }
     catch(Exception $e)
